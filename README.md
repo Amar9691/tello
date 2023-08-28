@@ -1,34 +1,42 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, run the development server:
+1. Pull source code through respository
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+   First take pull from remote url : https://github.com/Amar9691/tello.git
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install required packages
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+   Then, install required dependencies packages in order to run application 
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+   Command:-  npm install 
 
-## Learn More
+3. Setup environment files
 
-To learn more about Next.js, take a look at the following resources:
+   Create 3 files with following naming
+   .env => development local
+   .env.local => staging local environment
+   .env.production => production environment  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+4. Setup Environment variable
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    We have used appwrite cloud to manage application so you need to create account and create project , database and collections and write down their ids
+   
+    NEXT_PUBLIC_PROJECT_ID= your project id in appwrite cloude
+    NEXT_PUBLIC_DB_ID= your database id in appwrite cloud
+    NEXT_PUBLIC_TODO_COLLETION_ID= your todo collection id in appwrite cloud.
+    NEXT_PUBLIC_OPENAI_API_KEY= your open ai api key 
+    NEXT_PUBLIC_APPWRITE_ENDPOINT=app write end point url
+    NEXT_PUBLIC_STORAGE_ID= storage bucket id
 
-## Deploy on Vercel
+   
+6.  Run Application
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+    Finally run your application in local environment using following command
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    npm run dev
+
+    or
+    
+    yarn dev 
+
